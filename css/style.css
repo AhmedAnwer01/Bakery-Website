@@ -1,0 +1,591 @@
+/* ----------------------------------------------------------
+CSS INDEX
+01.body/container
+02.header
+03.Family Bakery
+04.Who We Are
+05.Our Location
+06.Our Baking
+07.Contact
+08.Footer Main
+09.Footer Bottom
+
+---------------------------------------------------------------- */
+/* --------------------01.body/container-------------- */
+@import url(./main.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.86em;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+    color: #686868;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+    height: 100%;
+    position: relative;
+    z-index: inherit;
+}
+
+/* --------------------02.header----------------- */
+
+header {
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.logo {
+    display: inline-block;
+
+}
+
+.logo a {
+    padding: 0 15px 0 0;
+}
+
+header .logo img {
+    width: 180px;
+    line-height: 80px;
+    position: relative;
+    top: 20px;
+}
+
+header ul {
+    text-decoration: none;
+    list-style: none;
+    /* display: inline-block; */
+    width: 41%;
+    float: right;
+    position: relative;
+    top: 0;
+
+}
+
+header li {
+    float: left;
+    text-align: center;
+    height: 100%;
+}
+
+header a {
+    display: inline-block;
+    color: #fff;
+    font-family: "Alegreya";
+    padding: 0 15px;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    font-size: 18px;
+    margin: 0;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+}
+
+header a:hover {
+    color: #e0c690;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    border-top: 3px solid #ae9768;
+    color: #e0dcd2;
+}
+
+/* ------------------------03.Family Bakery----------------------- */
+.family-bakery {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    height: 800px;
+    padding: 0.25px 2px;
+}
+
+.family-bakery .hero-content {
+    /* height: fit-content; */
+    position: relative;
+    top: 32%;
+    z-index: 10;
+}
+
+.bg-overlay {
+    float: inline-start;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.2);
+    /* z-index: ; */
+}
+
+.family-bakery .hero-top-heading {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, .92);
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+}
+
+.family-bakery h1 {
+    font-size: 76px;
+    font-family: "Alegreya";
+    font-weight: 400;
+    margin-bottom: 18px;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+.family-bakery .hero-subtitle {
+    color: rgba(255, 255, 255, .92);
+    font-size: 24px;
+    margin: 0px 0 15px;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+}
+
+.hero-buttons {
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+
+.button1 {
+    background-color: #8e7754;
+    border: 2px solid #8e7754;
+}
+
+.button1:hover {
+    background-color: #fff;
+    color: #222;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+.button2 {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.button2:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+.loader {
+    display: inline-block;
+    width: 28px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 32px;
+    border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+    animation: fadeDown 1s ease-out infinite;
+}
+
+@keyframes fadeDown {
+    0% {
+        top: 0%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 60%;
+        opacity: 0;
+    }
+}
+
+/* ------------------------04.Who We Are-------------------- */
+
+.who-are-we {
+    padding: 90px 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.who-are-we .hero-img {
+    width: 562px;
+}
+
+.who-are-we h2, p, ul {
+    display: inline-block;
+}
+
+.who-are-we h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+
+    font-family: "Alegreya";
+    color: #303030;
+    line-height: 1.38em;
+}
+
+.who-are-we p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.who-are-we .content1 {
+    width: 50%;
+    padding: 40px;
+    margin: 20px;
+    float: inline-end;
+}
+
+.content1 img {
+    width: 44px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin: 0 10px 0;
+}
+
+/* ------------------------05.Our Location-------------------- */
+
+.our-location {
+    padding: 90px 0;
+    background-color: #f8f8f8;
+}
+
+.content2 {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 50px 0 0;
+    vertical-align: top;
+    margin: 80px 0 0;
+}
+
+.our-location-img {
+    width: 48%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.our-location-img img {
+    width: 100%;
+}
+
+.our-location h2 {
+    margin: 0 0 30px;
+    font-size: 32px;
+    font-family: "Alegreya";
+}
+
+.our-location p {
+    line-height: 1.83;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+}
+
+/* -- ------------------06.Our Baking------------------- */
+.our-baking {
+    padding: 70px 0 50px;
+}
+
+.our-baking .heading {
+    text-align: center;
+    margin: 10px 0 60px;
+}
+
+.our-baking .heading h3 {
+    font-family: "Alegreya";
+    font-size: 30px;
+}
+
+.our-baking .heading p {
+    font-size: 17px;
+    color: #888;
+    max-width: 720px;
+    margin: 17px auto 0;
+}
+
+.cards {
+    width: 100%;
+    text-align: center;
+}
+
+.cards .card {
+    display: inline-block;
+    width: 33%;
+    padding: 0 15px;
+}
+
+.cards .card img {
+    width: 100%;
+}
+
+.cards .card h4 {
+    font: 24px "Alegreya";
+    margin: 20px 0;
+}
+
+/* ---------------------07.Contact-------------------- */
+.contact {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.contact-info {
+    display: inline-block;
+    width: 49.5%;
+    padding: 20px 35px 20px 15px;
+}
+
+.contact-info .contact-head {
+    margin-bottom: 30px;
+}
+
+.contact-info .contact-head h2 {
+    font-size: 32px;
+}
+
+.contact-info ul li {
+    border: 0;
+    padding: 15px 0;
+    padding-left: 15px 0 15px 52px;
+}
+
+.contact-info ul li .list-icon {
+    /* color: #fff; */
+    background: #8e7754;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.contact-info ul li span {
+    /* padding-top:; */
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.contact-info ul li .list-icon img {
+    width: 100%;
+}
+
+.map {
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+    padding: 20px 15px 20px 35px;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.map .iframe-overlay {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: #68686879;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.map:hover .iframe-overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* <!-- ---------------------------08.Footer Main--------------------- --> */
+footer {
+    background-color: #353330;
+    color: #797979;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    position: relative;
+}
+
+footer .footer-main {
+    background-color: #403d38;
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+    padding-top: 60px;
+    padding-bottom: 52px;
+}
+
+.footer-main h4 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.24s ease-in-out;
+}
+
+#footer-main .about-us p {
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    line-height: 1.86em;
+}
+
+.col {
+    width: 24.7%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+
+.footer-main ul li:last-child {
+    border-bottom: 0px transparent;
+}
+
+.footer-main ul li {
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+    line-height: 2.5rem;
+}
+
+.footer-main ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    padding-right: 8px;
+    /* font-size: 16px; */
+    color: #969696;
+    transition: padding .3s;
+}
+
+.footer-main ul li .c-dtls-icon {
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+}
+
+.footer-main ul li .c-dtls-icon img {
+    width: 100%;
+}
+
+.footer-contact-details {
+    position: relative;
+    /* opacity: 0.5; */
+}
+
+.footer-contact-details .bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    background-image: url(../images/contact-details-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    /* z-index: -1; */
+}
+
+.footer-contact-details ul li::before {
+    content: "";
+    width: 0;
+    padding: 0;
+}
+
+.footer-contact-details ul li span {
+    display: inline-block;
+    /* padding-left: 30px; */
+    vertical-align: top;
+    width: 85%;
+    line-height: 2rem;
+}
+
+/* -- -----------------09.Footer Bottom-------------- -- */
+.footer-bottom {
+    background-color: #353330;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom .footer-image {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    width: 353px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-bottom .footer-image img {
+    width: 100%;
+}
+
+.footer-bottom .social-icons ul li {
+    display: inline-block;
+}
+
+.footer-bottom .social-icons ul li a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #403d38;
+    margin: 0 8px 0 0;
+}
+
+.footer-bottom .social-icons ul li a img {
+    width: 100%;
+}

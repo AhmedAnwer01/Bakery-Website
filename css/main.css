@@ -1,0 +1,31 @@
+.button{
+    border: 2px solid transparent;
+    padding: 18px 28px;
+    margin:5px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-family: "Alegreya Sans";
+    line-height: 1.3rem;
+}
+.clr{
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #303030;
+    line-height: 1.38em;
+    font-family: "Alegreya";
+}
+img{
+    width: 100px;
+}
+p{
+    line-height: 1.83;
+    margin-bottom: 1rem;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+}
